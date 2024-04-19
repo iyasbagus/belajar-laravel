@@ -67,3 +67,7 @@ Route::get('name/{name}/{berat}/{tinggi}', function ($name,$berat,$tinggi) {
     ."Keterangan : <b>$ket<b> <br>";
 });
 
+// Route optional parameter
+Route::get('myname/{name?}', function($name = "Abdu"){
+    return "My name is $name";
+});
